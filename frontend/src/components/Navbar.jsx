@@ -46,7 +46,7 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="absolute left-0 top-0 w-40 h-screen py-20 flex flex-col items-center justify-start gap-5 bg-white font-bold font-sans text-[18px]">
+    <nav className="absolute top-0 w-[100%] flex justify-center bg-white font-bold font-sans text-[18px]">
       {links.map(({ to, label, end }) => (
         <NavLink key={label} to={to} end={end} className="group">
           {({ isActive }) => (

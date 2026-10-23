@@ -15,15 +15,18 @@ const features = [
 
 export function Landing() {
   return (
-    <div className="w-[70vw] h-[90vh] bg-slate-500 rounded-xl p-10 flex flex-col items-center justify-center gap-8 shadow-xl text-center">
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-col justify-center items-center gap-[30vh]">
+      <div className="flex flex-col justify-center items-center gap-7">
         <h1 className="font-extrabold text-5xl text-white">
           Welcome to <span className="text-sky-300">Web Analytics</span>
         </h1>
-        <p className="text-slate-200 text-lg max-w-xl">
+        <p className="text-slate-200 text-lg  text-center max-w-xl">
           Track how visitors use your site: sessions, clicks and page views, all
           in one place.
         </p>
+        <h1 style={{ fontSize: "30px" }} align="center">
+          UNDER CONSTRUCTION!
+        </h1>
       </div>
 
       <div className="grid grid-cols-2 gap-4 w-full max-w-2xl">
