@@ -37,10 +37,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "http://localhost:5173",
   "http://localhost:3000",
-  "https://causal-funnel-analytics-opvttqyc0-ratul-baniks-projects.vercel.app",
-  "https://causal-funnel-analytics-eta.vercel.app/",
-  "https://causal-funnel-analytics-ratul-baniks-projects.vercel.app/",
-  "https://causal-funnel-analytics-1-wxnm.onrender.com/",
+  "https://causal-funnel-analytics-eta.vercel.app",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
