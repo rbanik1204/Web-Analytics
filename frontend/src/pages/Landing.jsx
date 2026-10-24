@@ -15,16 +15,16 @@ const features = [
 
 export function Landing() {
   return (
-    <div className="w-full overflow-x-hidden">
-      <div className="min-h-screen flex flex-col justify-center items-center gap-10 py-10">
-        <div className="flex flex-col justify-center items-center gap-7">
-          <p className="w-fit bg-[#1E293B] p-2 mt-4 rounded-full text-sky-300">
+    <div className="w-full">
+      <div className="w-[100%] min-h-screen flex flex-col justify-start items-center gap-[30vh]">
+        <div className="flex flex-col justify-center items-center">
+          <p className="w-fit bg-[#1E293B] p-2 my-4 rounded-full text-sky-300">
             YOUR WEBSITE, UNDERSTOOD
           </p>
           <h1 className="font-extrabold text-5xl text-white">
             Welcome to <span className="text-sky-300">Web Analytics</span>
           </h1>
-          <p className="text-slate-200 text-lg text-center max-w-xl">
+          <p className="text-slate-200 text-lg mt-1 text-center max-w-xl">
             Track how visitors use your site: sessions, clicks and page views,
             all in one place.
           </p>
