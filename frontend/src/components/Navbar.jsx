@@ -49,7 +49,7 @@ export function Navbar() {
     <div className="flex space-between pt-2">
       <div className="flex items-start gap-3">
         <img
-          src="../../public/assets/icons/bar-chart.png"
+          src="./assets/icons/bar-chart.png"
           className="ml-3 h-8 w-8 object-contain"
           alt="Web Analytics Icon"
         />
