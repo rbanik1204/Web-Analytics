@@ -54,7 +54,7 @@ export function Sessions() {
   //     }, [])
 
   return (
-    <div className="w-[70vw] h-[90vh] bg-slate-500 rounded-xl p-6 flex flex-col gap-6 shadow-xl">
+    <div className="w-[70vw] h-[90vh] bg-inherit rounded-xl p-6 flex flex-col gap-6 shadow-xl">
       <h1 className="font-extrabold text-[30px] text-white text-center">
         Sessions
       </h1>

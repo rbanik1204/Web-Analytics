@@ -188,7 +188,7 @@ export function Heatmap() {
           onChange={(e) => setQuery(e.target.value)}
           list="known-urls"
           placeholder="Search a page URL, e.g. /pricing or https://example.com/about"
-          className="w-full bg-slate-700 text-white placeholder-slate-400 rounded-lg pl-4 pr-10 py-3 outline-none focus:ring-2 focus:ring-sky-400"
+          className="w-full bg-inherit text-white placeholder-slate-400 rounded-lg pl-4 pr-10 py-3 outline-none focus:ring-2 focus:ring-sky-400"
         />
         <datalist id="known-urls">
           {knownUrls.map((u) => (
@@ -229,7 +229,7 @@ export function Heatmap() {
                 ].map(([label, value]) => (
                   <div
                     key={label}
-                    className="bg-slate-700 rounded-lg px-5 py-3 flex items-center justify-between"
+                    className="bg-inherit rounded-lg px-5 py-3 flex items-center justify-between"
                   >
                     <span className="text-slate-300 font-semibold">
                       {label}
@@ -251,7 +251,7 @@ export function Heatmap() {
                     {urlStats.urls.map((u) => (
                       <div
                         key={u.page_url}
-                        className="bg-slate-700 rounded-lg px-4 py-3 flex flex-col gap-2"
+                        className="bg-inherit rounded-lg px-4 py-3 flex flex-col gap-2"
                       >
                         <span
                           className="text-white text-sm truncate"
@@ -292,7 +292,7 @@ export function Heatmap() {
                     {urlStats.sessions.map((s) => (
                       <div
                         key={s.session_id}
-                        className="bg-slate-700 rounded-lg px-4 py-3 flex flex-col gap-2"
+                        className="bg-inherit rounded-lg px-4 py-3 flex flex-col gap-2"
                       >
                         <span
                           className="text-white font-mono text-xs truncate"
@@ -310,7 +310,7 @@ export function Heatmap() {
                             <b className="text-pink-400 text-sm">{s.clicks}</b>
                           </span>
                         </div>
-                        <div className="h-2 bg-slate-600 rounded overflow-hidden">
+                        <div className="h-2 bg-inherit rounded overflow-hidden">
                           <div
                             className="h-full rounded"
                             style={{
@@ -333,7 +333,7 @@ export function Heatmap() {
         /* ---------- Original session view ---------- */
         <>
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-slate-700 rounded-lg px-6 py-4 flex items-center justify-between">
+            <div className="bg-inherit rounded-lg px-6 py-4 flex items-center justify-between">
               <span className="text-slate-300 font-semibold text-lg">
                 Total Clicks
               </span>
@@ -421,7 +421,7 @@ export function Heatmap() {
               <select
                 value={selected}
                 onChange={(e) => setSelected(e.target.value)}
-                className="bg-slate-700 text-white font-mono text-sm rounded-lg px-3 py-2 outline-none"
+                className="bg-inherit text-white font-mono text-sm rounded-lg px-3 py-2 outline-none"
               >
                 {sessionIds.map((id) => (
                   <option key={id} value={id}>
@@ -449,7 +449,7 @@ export function Heatmap() {
                 {pageViews.map((p) => (
                   <div
                     key={p.page_url}
-                    className="bg-slate-700 rounded-lg px-4 py-3 flex flex-col gap-2"
+                    className="bg-inherit rounded-lg px-4 py-3 flex flex-col gap-2"
                   >
                     <div className="flex items-center justify-between gap-4">
                       <span
@@ -462,7 +462,7 @@ export function Heatmap() {
                         {p.views}
                       </span>
                     </div>
-                    <div className="h-2 bg-slate-600 rounded overflow-hidden">
+                    <div className="h-2 bg-sky-200 rounded overflow-hidden">
                       <div
                         className="h-full rounded"
                         style={{

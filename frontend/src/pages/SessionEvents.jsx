@@ -31,7 +31,7 @@ export function SessionEvents() {
   }, [session_id]);
 
   return (
-    <div className="w-[70vw] h-[90vh] bg-slate-500 rounded-xl p-6 flex flex-col gap-6 shadow-xl">
+    <div className="w-[70vw] h-[90vh] bg-inherit rounded-xl p-6 flex flex-col gap-6 shadow-xl">
       <div className="flex items-center justify-between">
         <Link
           to="/sessions"

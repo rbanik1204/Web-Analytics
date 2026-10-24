@@ -47,9 +47,17 @@ export function Navbar() {
 
   return (
     <div className="flex space-between pt-2">
-      <p className="text-[25px] text-cyan-50">
-        Web&nbsp;<span>Analytics</span>
-      </p>
+      <div className="flex items-start gap-3">
+        <img
+          src="../../public/assets/icons/bar-chart.png"
+          className="ml-3 h-8 w-8 object-contain"
+          alt="Web Analytics Icon"
+        />
+        <p className="text-[20px] mt-1 text-cyan-50 text-nowrap font-extrabold">
+          Web <span>Analytics</span>
+        </p>
+      </div>
+
       <nav className="sticky mb-5 w-screen h-fit bg-transparent flex justify-center font-bold font-sans text-[18px] rounded-full">
         {links.map(({ to, label, end }) => (
           <NavLink key={label} to={to} end={end} className="group">
@@ -68,7 +76,7 @@ export function Navbar() {
           </NavLink>
         ))}
       </nav>
-      <p className="text-[18px] h-fit text-cyan-50 rounded-full py-1 px-3 font-bold text-nowrap mr-3 bg-pink-700">
+      <p className="text-[18px] h-fit text-cyan-50 rounded-full py-1 px-3 font-bold text-nowrap mr-3 bg-pink-600">
         Get Started
       </p>
     </div>

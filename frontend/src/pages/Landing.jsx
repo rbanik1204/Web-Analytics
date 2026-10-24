@@ -34,7 +34,7 @@ export function Landing() {
             <Link
               key={f.to}
               to={f.to}
-              className="bg-slate-700 hover:bg-sky-300 group transition-colors rounded-lg p-10 flex flex-col gap-2 text-left"
+              className="bg-slate-700 hover:bg-sky-700 group transition-colors rounded-lg p-10 flex flex-col gap-2 text-left"
             >
               <span className="text-sky-400 group-hover:text-white font-bold text-xl">
                 {f.title} →
