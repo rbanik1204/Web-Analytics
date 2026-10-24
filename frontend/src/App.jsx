@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 
 function App() {
   return (
-    <div className="flex w-screen min-h-screen bg-slate-500 overflow-hidden">
+    <div className="w-screen min-h-screen bg-[#0F172A]">
       <Navbar />
       <main className="flex-1 flex justify-center items-center">
         {/* <Routes>

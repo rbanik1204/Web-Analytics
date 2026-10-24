@@ -43,7 +43,7 @@ export function SessionEvents() {
         <div className="w-16" />
       </div>
 
-      <div className="bg-slate-700 rounded-lg px-6 py-4 flex items-center justify-between gap-4">
+      <div className="bg-inherit rounded-lg px-6 py-4 flex items-center justify-between gap-4">
         <div className="flex flex-col min-w-0">
           <span className="text-slate-400 text-xs uppercase tracking-wide">
             Session ID

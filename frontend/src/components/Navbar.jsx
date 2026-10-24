@@ -46,23 +46,31 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-0 w-[100%] flex justify-center bg-white font-bold font-sans text-[18px]">
-      {links.map(({ to, label, end }) => (
-        <NavLink key={label} to={to} end={end} className="group">
-          {({ isActive }) => (
-            <div
-              className={`w-32 h-10 m-1 flex items-center justify-center rounded-md transition-colors
+    <div className="flex space-between pt-2">
+      <p className="text-[25px] text-cyan-50">
+        Web&nbsp;<span>Analytics</span>
+      </p>
+      <nav className="sticky mb-5 w-screen h-fit bg-transparent flex justify-center font-bold font-sans text-[18px] rounded-full">
+        {links.map(({ to, label, end }) => (
+          <NavLink key={label} to={to} end={end} className="group">
+            {({ isActive }) => (
+              <div
+                className={`w-32 h-10 m-1 flex items-center justify-center rounded-md transition-colors
                                 ${
                                   isActive
-                                    ? "bg-pink-700 text-white"
-                                    : "text-green-900 group-hover:bg-sky-400 group-hover:text-white"
+                                    ? "bg-pink-700 text-white shadow-xl rounded-full"
+                                    : "text-green-900 group-hover:bg-sky-400 group-hover:text-white group-hover:rounded-xl"
                                 }`}
-            >
-              {label}
-            </div>
-          )}
-        </NavLink>
-      ))}
-    </nav>
+              >
+                {label}
+              </div>
+            )}
+          </NavLink>
+        ))}
+      </nav>
+      <p className="text-[18px] h-fit text-cyan-50 rounded-full py-1 px-3 font-bold text-nowrap mr-3 bg-pink-700">
+        Get Started
+      </p>
+    </div>
   );
 }

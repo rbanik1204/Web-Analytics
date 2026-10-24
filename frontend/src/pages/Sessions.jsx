@@ -60,7 +60,7 @@ export function Sessions() {
       </h1>
 
       {/* Total sessions card */}
-      <div className="bg-slate-700 rounded-lg px-6 py-4 flex items-center justify-between">
+      <div className="bg-inherit rounded-lg px-6 py-4 flex items-center justify-between">
         <span className="text-slate-300 font-semibold text-lg">
           Total Sessions
         </span>
