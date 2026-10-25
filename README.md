@@ -3,7 +3,7 @@
 A full-stack web analytics project for collecting browser events, storing them in MongoDB, and inspecting session activity through a React dashboard.
 
 **Project links**
-- **Frontend:** https://causal-funnel-analytics-df84u92cl-ratul-baniks-projects.vercel.app/
+- **Frontend:** https://causal-funnel-analytics-eta.vercel.app/
 - **Backend:** https://causal-funnel-analytics-1-wxnm.onrender.com/
 - **Repository:** https://github.com/rbanik1204/Causal-Funnel-Analytics
 
