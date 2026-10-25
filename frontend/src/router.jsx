@@ -1,9 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import App from "./App";
-import { Landing } from "./pages/Landing";
-import { Sessions } from "./pages/Sessions";
-import { SessionEvents } from "./pages/SessionEvents";
-import { Heatmap } from "./pages/Heatmap";
+import PageLoader from "./components/PageLoader";
 
 const router = createBrowserRouter([
   {
@@ -12,19 +9,35 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Landing />,
+        HydrateFallback: PageLoader,
+        lazy: async () => {
+          const { Landing } = await import("./pages/Landing");
+          return { Component: Landing };
+        },
       },
       {
         path: "sessions",
-        element: <Sessions />,
+        HydrateFallback: PageLoader,
+        lazy: async () => {
+          const { Sessions } = await import("./pages/Sessions");
+          return { Component: Sessions };
+        },
       },
       {
         path: "sessions/:session_id/events",
-        element: <SessionEvents />,
+        HydrateFallback: PageLoader,
+        lazy: async () => {
+          const { SessionEvents } = await import("./pages/SessionEvents");
+          return { Component: SessionEvents };
+        },
       },
       {
         path: "heatmap",
-        element: <Heatmap />,
+        HydrateFallback: PageLoader,
+        lazy: async () => {
+          const { Heatmap } = await import("./pages/Heatmap");
+          return { Component: Heatmap };
+        },
       },
     ],
   },

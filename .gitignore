@@ -38,3 +38,7 @@ Desktop.ini
 #postman configurations
 postman
 .postman
+
+
+#obsidian
+.obsidian/*.json
